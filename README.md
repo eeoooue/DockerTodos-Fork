@@ -7,5 +7,9 @@ Convert TodosApi (earlier homework) to use CQRS instead of services (MediaTR) an
 
 ### Setup:
 
-Open application directory in a Terminal and set command: 
-`docker-composer up -d`
+Open application directory in a Terminal and run command 
+`docker-composer up -d` to set Docker container.
+
+### Use:
+
+In your browser, open http://localhost:4200/ to see the new app run.
