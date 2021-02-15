@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+
+  mssqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password1234"
+      MSSQL_PID: Express
+    container_name: mssqlserver
+    ports:
+      - "1433:1433"
+
+  webapi:
+    build:
+      TodoListWebApi/
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    depends_on:
+      mssqlserver:
+        condition: service_started
+    environment:
+      DBServer: "mssqlserver"
+    container_name: webapi
+    ports:
+      - "8080:80"
+        
+  webapp:
+    build:
+      TodoListWebApp/
+    depends_on:
+      mssqlserver:
+        condition: service_started
+      webapi:
+        condition: service_started
+    container_name: webapp
+    ports:
+      - "4200:80"
