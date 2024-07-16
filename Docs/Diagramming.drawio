@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2024-07-16T10:35:11.861Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="STTcW0JvTMayceb8hXnA" version="23.0.2" type="device">
+  <diagram name="Page-1" id="iKWKzY-1drNK6chnxvaR">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-1" value="&lt;b&gt;WebAPI&lt;/b&gt;&lt;br&gt;ASP.NET Core Web API (.NET 5.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="400" y="120" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-2" value="&lt;b&gt;Domain&lt;/b&gt;&lt;br&gt;C# Class Library (.NET 5.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="360" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-3" value="&lt;b&gt;Repository&lt;/b&gt;&lt;br&gt;C# Class Library (.NET 5.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="400" y="320" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-4" value="&lt;b&gt;Application&lt;/b&gt;&lt;br&gt;C# Class Library (.NET 5.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="720" y="240" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Cl1SEEvr1qE1gA0sd4s7-1" target="Cl1SEEvr1qE1gA0sd4s7-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="310" as="sourcePoint" />
+            <mxPoint x="530" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Cl1SEEvr1qE1gA0sd4s7-1" target="Cl1SEEvr1qE1gA0sd4s7-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="50" as="sourcePoint" />
+            <mxPoint x="700" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-7" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Cl1SEEvr1qE1gA0sd4s7-4" target="Cl1SEEvr1qE1gA0sd4s7-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="578" y="170" as="sourcePoint" />
+            <mxPoint x="642" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Cl1SEEvr1qE1gA0sd4s7-3" target="Cl1SEEvr1qE1gA0sd4s7-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="815" y="370" as="sourcePoint" />
+            <mxPoint x="765" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-9" value="It looks like we are using the Repository pattern" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="440" y="460" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cl1SEEvr1qE1gA0sd4s7-10" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" source="Cl1SEEvr1qE1gA0sd4s7-9" target="Cl1SEEvr1qE1gA0sd4s7-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="490" as="sourcePoint" />
+            <mxPoint x="590" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
